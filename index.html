@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <title>ruangbola | berita sepakbola</title>
+    </head>
+
+    <body>
+        <!-- ---------- --- ---------- Navbar Start --- ---------- --- ---------- -->
+        <nav>
+            <div class="top__nav" id="navbar">
+                <div class="container nav__container">
+                    <div class="nav__left">
+                        <div class="menu__btn btn__box" id="menuBtn">
+                            <img src="./icon/menu.svg" />
+                        </div>
+                    </div>
+                    <a href="#" class="logo"><h3>RUANGBOLA</h3></a>
+                    <div class="nav__right">
+                        <div class="search__btn btn__box" id="searchBtn">
+                            <img src="./icon/search.svg" />
+                        </div>
+                        <div
+                            class="theme__btn btn__box"
+                            id="darkBtn"
+                            onclick="setDarkMode()"
+                        >
+                            <img src="./icon/dark-mode.svg" />
+                        </div>
+                        <div class="profile__btn btn__box" id="profileBtn">
+                            <img src="./icon/user.svg" />
+                        </div>
+                        <div class="search__box">
+                            <div class="search__bar">
+                                <img src="./icon/search.svg" />
+                                <input
+                                    type="search"
+                                    name="search"
+                                    id="search"
+                                    placeholder="Telusuri"
+                                />
+                            </div>
+                        </div>
+                        <div class="profile__box">
+                            <div class="profile__wrap">
+                                <div class="top__profile">
+                                    <!-- <div class="login__box">
+                                <a href="#"><h6>Masuk</h6></a>
+                                <a href="#"><h6>Daftar</h6></a>
+                            </div> -->
+                                    <div class="profile">
+                                        <img src="./icon/user-circle.svg" />
+                                        <h6>Username</h6>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="bottom__profile">
+                                    <a href="#">
+                                        <div class="icon__box">
+                                            <img src="./icon/bell.svg" />
+                                        </div>
+                                        <span>Notifikasi</span>
+                                    </a>
+                                    <a href="#">
+                                        <div class="icon__box">
+                                            <img src="./icon/setting.svg" />
+                                        </div>
+                                        <span>Pengaturan</span>
+                                    </a>
+                                    <div class="logout__btn" id="logoutBtn">
+                                        <div class="icon__box">
+                                            <img src="./icon/logout.svg" />
+                                        </div>
+                                        <span>Keluar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom__nav">
+                <div class="nav__menu">
+                    <li>
+                        <a href="#" class="active">
+                            <img src="./icon/home.svg" />
+                            <img src="./icon/home_solid.svg" />
+                            <h6>Home</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icon/pertandingan.svg" />
+                            <img src="./icon/pertandingan.svg" />
+                            <h6>Pertandingan</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icon/video.svg" />
+                            <img src="./icon/video_solid.svg" />
+                            <h6>Video</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icon/klasemen.svg" />
+                            <img src="./icon/klasemen.svg" />
+                            <h6>Klasemen</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icon/user.svg" />
+                            <img src="./icon/user_solid.svg" />
+                            <h6>Profile</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="logout__box">
+                <div class="logout__wrap">
+                    <div class="icon__box">
+                        <img src="./icon/exclamation.png" />
+                    </div>
+                    <span>Apakah anda yakin ingin keluar?</span>
+                    <div class="logout__btn">
+                        <button type="submit"><span>Ya</span></button>
+                        <div class="close__btn" id="closeLogoutBtn">
+                            <span>Tidak</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside>
+                <div class="container aside__container">
+                    <li><a href="#">Terbaru</a></li>
+                    <li><a href="#">Fokus</a></li>
+                    <li><a href="#">Terpopuler</a></li>
+                    <li><a href="#">Transfer</a></li>
+                    <li><a href="#">Taktik</a></li>
+                    <li><a href="#">Internasional</a></li>
+                    <li><a href="#">Nasional</a></li>
+                    <li>
+                        <h6>Lainnya</h6>
+                        <img src="./icon/arrow.svg" />
+                    </li>
+                </div>
+            </aside>
+        </nav>
+        <!-- ---------- --- ---------- Navbar End --- ---------- --- ---------- -->
+
+        <!-- ---------- --- ---------- Header Start --- ---------- --- ---------- -->
+        <header>
+            <div class="container header__container">
+                <div class="image__box">
+                    <a href="#">
+                        <img src="./image/header.jpg" />
+                    </a>
+                </div>
+                <div class="text__box">
+                    <a href="#">
+                        <h1>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Accusantium, illum.
+                        </h1>
+                    </a>
+                    <div class="text__btn">
+                        <a href="#" class="btn">Fokus</a>
+                        <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ---------- --- ---------- Header End --- ---------- --- ---------- -->
+        <div class="main__section"></div>
+    </body>
+
+    <script src="./js/main.js"></script>
+</html>

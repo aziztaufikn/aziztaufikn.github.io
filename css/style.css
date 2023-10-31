@@ -1,0 +1,912 @@
+/* <-- --------- --- Font --- --------- --> */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* <-- --------- --- Root CSS --- --------- --> */
+:root {
+    --background: #171717;
+    --light: #e9eaee;
+    --dark: #282828;
+
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2927;
+    --gray-900: #030712;
+
+    --slate-100: #f3f4f6;
+    --slate-200: #e5e7eb;
+    --slate-300: #d1d5db;
+    --slate-400: #9ca3af;
+    --slate-500: #6b7280;
+    --slate-600: #4b5563;
+    --slate-700: #374151;
+    --slate-800: #1f2927;
+    --slate-900: #030712;
+
+    --main: #a6f163;
+    --primary: #4707ea;
+    --secondary: #f97316;
+    --succecs: #22ca4b;
+    --danger: #ff4336;
+    --warning: #eab507;
+    --purple: #a063f5;
+
+    --main-light: rgba(166, 241, 99, 0.2);
+    --primary-light: rgba(71, 7, 234, 0.2);
+    --secondary-light: rgba(249, 115, 22, 0.2);
+    --succecs-light: rgba(34, 202, 75, 0.2);
+    --danger-light: rgba(255, 67, 54, 0.2);
+    --warning-light: rgba(234, 181, 7, 0.2);
+    --purple-light: rgba(160, 99, 245, 0.2);
+
+    /* --------- Icons --------- */
+    --icon-background: invert(0%) sepia(7%) saturate(2416%) hue-rotate(340deg)
+        brightness(89%) contrast(82%);
+    --icon-light: invert(98%) sepia(2%) saturate(245%) hue-rotate(190deg)
+        brightness(92%) contrast(104%);
+    --icon-dark: invert(14%) sepia(0%) saturate(0%) hue-rotate(267deg)
+        brightness(98%) contrast(94%);
+
+    --icon-gray-100: invert(100%) sepia(18%) saturate(994%) hue-rotate(178deg)
+        brightness(101%) contrast(93%);
+    --icon-gray-200: invert(96%) sepia(5%) saturate(148%) hue-rotate(181deg)
+        brightness(99%) contrast(89%);
+    --icon-gray-300: invert(98%) sepia(3%) saturate(1410%) hue-rotate(181deg)
+        brightness(89%) contrast(92%);
+    --icon-gray-400: invert(72%) sepia(10%) saturate(319%) hue-rotate(179deg)
+        brightness(88%) contrast(92%);
+    --icon-gray-500: invert(47%) sepia(6%) saturate(860%) hue-rotate(182deg)
+        brightness(91%) contrast(87%);
+    --icon-gray-600: invert(31%) sepia(22%) saturate(427%) hue-rotate(175deg)
+        brightness(91%) contrast(83%);
+    --icon-gray-700: invert(20%) sepia(24%) saturate(602%) hue-rotate(177deg)
+        brightness(97%) contrast(85%);
+    --icon-gray-800: invert(10%) sepia(24%) saturate(503%) hue-rotate(118deg)
+        brightness(95%) contrast(86%);
+    --icon-gray-900: invert(5%) sepia(39%) saturate(911%) hue-rotate(186deg)
+        brightness(87%) contrast(104%);
+
+    --icon-slate-100: invert(100%) sepia(18%) saturate(994%) hue-rotate(178deg)
+        brightness(101%) contrast(93%);
+    --icon-slate-200: invert(96%) sepia(5%) saturate(148%) hue-rotate(181deg)
+        brightness(99%) contrast(89%);
+    --icon-slate-300: invert(98%) sepia(3%) saturate(1410%) hue-rotate(181deg)
+        brightness(89%) contrast(92%);
+    --icon-slate-400: invert(72%) sepia(10%) saturate(319%) hue-rotate(179deg)
+        brightness(88%) contrast(92%);
+    --icon-slate-500: invert(47%) sepia(6%) saturate(860%) hue-rotate(182deg)
+        brightness(91%) contrast(87%);
+    --icon-slate-600: invert(31%) sepia(22%) saturate(427%) hue-rotate(175deg)
+        brightness(91%) contrast(83%);
+    --icon-slate-700: invert(20%) sepia(24%) saturate(602%) hue-rotate(177deg)
+        brightness(97%) contrast(85%);
+    --icon-slate-800: invert(10%) sepia(24%) saturate(503%) hue-rotate(118deg)
+        brightness(95%) contrast(86%);
+    --icon-slate-900: invert(5%) sepia(39%) saturate(911%) hue-rotate(186deg)
+        brightness(87%) contrast(104%);
+
+    --icon-main: invert(94%) sepia(66%) saturate(765%) hue-rotate(32deg)
+        brightness(105%) contrast(89%);
+    --icon-primary: invert(11%) sepia(96%) saturate(6969%) hue-rotate(261deg)
+        brightness(85%) contrast(120%);
+    --icon-secondary: invert(45%) sepia(80%) saturate(1207%) hue-rotate(352deg)
+        brightness(101%) contrast(95%);
+    --icon-succecs: invert(58%) sepia(68%) saturate(526%) hue-rotate(82deg)
+        brightness(94%) contrast(96%);
+    --icon-danger: invert(35%) sepia(34%) saturate(3260%) hue-rotate(337deg)
+        brightness(101%) contrast(103%);
+    --icon-warning: invert(72%) sepia(86%) saturate(1780%) hue-rotate(3deg)
+        brightness(98%) contrast(94%);
+    --icon-purple: invert(56%) sepia(48%) saturate(6642%) hue-rotate(237deg)
+        brightness(99%) contrast(94%);
+
+    /* ---------- Containers ---------- */
+    --width-lg: 82%;
+    --width-md: 96%;
+    --width-sm: 92%;
+
+    /* ---------- Transitions ---------- */
+    --transition-1: all 350ms ease;
+    --transition-2: 350ms ease;
+    --transition-3: 350ms;
+
+    /* ---------- Border Colors ---------- */
+    --border-1: rgba(255, 255, 255, 0.1);
+    --border-2: rgba(255, 255, 255, 0.2);
+    --border-3: rgba(255, 255, 255, 0.3);
+
+    /* ---------- Box Shadow ---------- */
+    --box-shadow-1: rgba(255, 255, 255, 0.1);
+    --box-shadow-2: rgba(255, 255, 255, 0.2);
+    --box-shadow-3: rgba(255, 255, 255, 0.3);
+}
+
+/* <-- --------- --- Dark Mode --- --------- --> */
+.light {
+    --background: #ffffff;
+    --light: #202125;
+    --dark: #f2f2f2;
+
+    --gray-100: #030712;
+    --gray-200: #1f2927;
+    --gray-300: #374151;
+    --gray-400: #4b5563;
+    --gray-500: #6b7280;
+    --gray-600: #9ca3af;
+    --gray-700: #d1d5db;
+    --gray-800: #e5e7eb;
+    --gray-900: #f3f4f6;
+
+    /* --------- Icons --------- */
+    --icon-background: invert(100%) sepia(0%) saturate(7500%) hue-rotate(205deg)
+        brightness(100%) contrast(103%);
+    --icon-light: invert(10%) sepia(6%) saturate(953%) hue-rotate(191deg)
+        brightness(98%) contrast(92%);
+    --icon-dark: invert(100%) sepia(0%) saturate(1736%) hue-rotate(35deg)
+        brightness(115%) contrast(90%);
+
+    --icon-gray-100: invert(5%) sepia(39%) saturate(911%) hue-rotate(186deg)
+        brightness(87%) contrast(104%);
+    --icon-gray-200: invert(10%) sepia(24%) saturate(503%) hue-rotate(118deg)
+        brightness(95%) contrast(86%);
+    --icon-gray-300: invert(20%) sepia(24%) saturate(602%) hue-rotate(177deg)
+        brightness(97%) contrast(85%);
+    --icon-gray-400: invert(31%) sepia(22%) saturate(427%) hue-rotate(175deg)
+        brightness(91%) contrast(83%);
+    --icon-gray-500: invert(47%) sepia(6%) saturate(860%) hue-rotate(182deg)
+        brightness(91%) contrast(87%);
+    --icon-gray-600: invert(72%) sepia(10%) saturate(319%) hue-rotate(179deg)
+        brightness(88%) contrast(92%);
+    --icon-gray-700: invert(98%) sepia(3%) saturate(1410%) hue-rotate(181deg)
+        brightness(89%) contrast(92%);
+    --icon-gray-800: invert(96%) sepia(5%) saturate(148%) hue-rotate(181deg)
+        brightness(99%) contrast(89%);
+    --icon-gray-900: invert(100%) sepia(18%) saturate(994%) hue-rotate(178deg)
+        brightness(101%) contrast(93%);
+
+    /* ---------- Border Colors ---------- */
+    --border-1: rgba(0, 0, 0, 0.1);
+    --border-2: rgba(0, 0, 0, 0.2);
+    --border-3: rgba(0, 0, 0, 0.3);
+
+    /* ---------- Box Shadow ---------- */
+    --box-shadow-1: rgba(0, 0, 0, 0.1);
+    --box-shadow-2: rgba(0, 0, 0, 0.2);
+    --box-shadow-3: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background: var(--background);
+    color: var(--light);
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: var(--width-lg);
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 1rem 0;
+    background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+a {
+    font-size: 1.25rem;
+    color: var(--light);
+}
+
+span {
+    font-size: 1.15rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main);
+    border-radius: 4px;
+}
+
+/* <---------- --- ----------> Navbar Start <---------- --- ----------> */
+/* <---------- --- Top Nav --- ----------> */
+nav .top__nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 100;
+    border-bottom: 1px solid var(--main);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+nav .top__nav .nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+nav .top__nav .nav__left {
+    position: absolute;
+    right: 0;
+}
+
+nav .top__nav .logo h3 {
+    color: var(--slate-200);
+}
+
+nav .top__nav .nav__right {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-right: 2.6rem;
+}
+
+nav .top__nav .btn__box img {
+    width: 1.4rem;
+    filter: var(--icon-slate-200);
+    transition: var(--transition-1);
+    cursor: pointer;
+}
+
+nav .top__nav .btn__box:hover img {
+    filter: var(--icon-main);
+}
+
+/* <---------- --- Bottom Nav --- ----------> */
+
+nav .bottom__nav {
+    position: fixed;
+    width: fit-content;
+    height: 4.5rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+}
+
+nav .bottom__nav .nav__menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1.5rem;
+}
+
+nav .bottom__nav .nav__menu li img {
+    display: none;
+}
+
+nav .bottom__nav .nav__menu li:nth-last-child(1) {
+    display: none;
+}
+
+nav .bottom__nav .nav__menu li h6 {
+    color: var(--slate-200);
+    transition: var(--transition-1);
+}
+
+nav .bottom__nav .nav__menu li a:hover h6 {
+    color: var(--main);
+}
+
+nav .bottom__nav .nav__menu li a {
+    position: relative;
+}
+
+nav .bottom__nav .nav__menu li a.active::before,
+nav .bottom__nav .nav__menu li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    background-color: var(--slate-200);
+    border-radius: 1px;
+}
+
+nav .bottom__nav .nav__menu li a::after {
+    width: 0;
+    background-color: var(--main);
+    transition: var(--transition-1);
+}
+
+nav .bottom__nav .nav__menu li a:hover:after {
+    width: 100%;
+}
+
+/* <---------- --- Search Box --- ----------> */
+nav .search__box {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition-1);
+}
+
+nav .search__box.open {
+    max-height: 4rem;
+}
+
+nav .search__box .search__bar {
+    position: relative;
+    width: 23rem;
+    height: 2.8rem;
+}
+
+nav .search__box .search__bar img {
+    position: absolute;
+    top: 50%;
+    left: 0.8rem;
+    transform: translateY(-50%);
+    width: 1.3rem;
+    filter: var(--icon-slate-600);
+}
+
+nav .search__box .search__bar input {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.7rem 0 2.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-1);
+    background: var(--slate-200);
+    color: var(--slate-800);
+    transition: var(--transition-1);
+}
+
+nav .search__box .search__bar input:focus {
+    background: var(--slate-300);
+}
+
+nav .search__box .search__bar input::placeholder {
+    color: var(--slate-600);
+}
+
+/* <---------- --- Profile Box --- ----------> */
+nav .profile__box {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 23rem;
+    height: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition-1);
+}
+
+nav .profile__box.open {
+    max-height: 25rem;
+}
+
+nav .profile__box .profile__wrap {
+    width: 100%;
+    height: fit-content;
+    background: var(--slate-200);
+    padding: 1rem;
+    border: 1px solid var(--border-1);
+    border-radius: 0.5rem;
+}
+
+nav .profile__box .login__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .profile__box .login__box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 2);
+    color: var(--slate-700);
+    background: var(--main);
+    padding: 0.6rem 0;
+    border-radius: 0.5rem;
+    transition: var(--transition-1);
+}
+
+nav .profile__box .login__box a:hover {
+    background: var(--succecs);
+}
+
+nav .profile__box .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav .profile__box .profile img {
+    width: 2.5rem;
+    filter: var(--icon-slate-600);
+}
+
+nav .profile__box .profile h6 {
+    color: var(--slate-700);
+}
+
+nav .profile__box hr {
+    border-top: 1px solid var(--slate-300);
+    margin: 0.8rem 0;
+}
+
+nav .bottom__profile a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+nav .bottom__profile .logout__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+nav .bottom__profile .icon__box {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background: var(--slate-300);
+}
+
+nav .bottom__profile .icon__box img {
+    filter: var(--icon-slate-700);
+}
+
+nav .bottom__profile span {
+    color: var(--slate-700);
+    transition: var(--transition-1);
+}
+
+nav .bottom__profile a:hover span {
+    color: var(--slate-400);
+}
+
+nav .bottom__profile .logout__btn:hover span {
+    color: var(--danger);
+}
+
+/* <---------- --- Logout Box --- ----------> */
+nav .logout__box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 100000;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition-1);
+}
+
+nav .logout__box.open {
+    max-height: 100%;
+}
+
+nav .logout__box .logout__wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: fit-content;
+    background: var(--slate-200);
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logout__box .icon__box img {
+    width: 3.5rem;
+    height: 3.5rem;
+    filter: var(--icon-danger);
+    margin-bottom: 1.3rem;
+}
+
+nav .logout__box span {
+    font-size: 1.1rem;
+    color: var(--slate-500);
+    margin-bottom: 1.2rem;
+}
+
+nav .logout__box .logout__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav .logout__box .logout__btn .close__btn,
+nav .logout__box .logout__btn button {
+    width: 10rem;
+    padding: 0.55rem 0;
+    text-align: center;
+    background: var(--main);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-1);
+}
+
+nav .logout__box .logout__btn .close__btn span,
+nav .logout__box .logout__btn button span {
+    font-size: 1.2rem;
+    color: var(--slate-700);
+}
+
+nav .logout__box .logout__btn button:hover {
+    background: var(--danger);
+}
+
+nav .logout__box .logout__btn .close__btn:hover {
+    background: var(--succecs);
+}
+
+/* <---------- --- Sidebar Box --- ----------> */
+aside {
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    height: 3.4rem;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 2000;
+    transition: var(--transition-1);
+}
+
+aside.open {
+    max-height: 5rem;
+}
+
+aside .aside__container {
+    height: 100%;
+    background: var(--slate-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    gap: 1.7rem;
+}
+
+aside .aside__container li,
+aside .aside__container li a {
+    color: var(--slate-700);
+    transition: var(--transition-1);
+}
+
+aside .aside__container li:hover,
+aside .aside__container li:hover a {
+    color: var(--secondary);
+}
+
+aside .aside__container li:nth-last-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+aside .aside__container li:nth-last-child(1) img {
+    width: 0.7rem;
+    filter: var(--icon-slate-700);
+    transition: var(--transition-1);
+}
+
+aside .aside__container li:nth-last-child(1):hover img {
+    filter: var(--icon-secondary);
+    rotate: 180deg;
+}
+
+/* <---------- --- ----------> Navbar End <---------- --- ----------> */
+
+/* <---------- --- ----------> Header Start <---------- --- ----------> */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: -10;
+}
+
+header .header__container {
+    width: 100%;
+    height: 58rem;
+    overflow: hidden;
+    position: relative;
+}
+
+header .image__box {
+    position: relative;
+}
+
+header .image__box img {
+    min-height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header .image__box::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .text__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: fit-content;
+}
+
+header .text__box a h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--slate-200);
+    transition: var(--transition-1);
+}
+
+header .text__box a:hover h1 {
+    color: var(--main);
+}
+
+header .text__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+header .text__btn a {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--slate-200);
+    border: 1px solid var(--main);
+    border-radius: 0.5rem;
+    transition: var(--transition-1);
+    position: relative;
+}
+
+header .text__btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main);
+    border-radius: 0.3rem;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+header .text__btn a:hover:before {
+    width: 100%;
+}
+
+header .text__btn a:hover {
+    color: var(--slate-800);
+    font-weight: 500;
+}
+/* <---------- --- ----------> Header End <---------- --- ----------> */
+
+.main__section {
+    margin-top: 58rem;
+    padding-top: 0;
+}
+
+/* ========== === ========== ==== Media Query for Tablets ==== ========= === ========= */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--width-md);
+    }
+}
+
+/* ========== === ========== ==== Media Query for Small Tablets ==== ========= === ========= */
+@media screen and (max-width: 768px) {
+    .container {
+        width: var(--width-md);
+    }
+}
+
+/* ========== === ========== ==== Media Query for Mobile Phones ==== ========= === ========= */
+@media screen and (max-width: 640px) {
+    .container {
+        width: var(--width-sm);
+    }
+
+    /* <---------- --- Top Nav --- ----------> */
+    nav .top__nav {
+        border-bottom: none;
+        background-color: var(--background);
+    }
+
+    nav .top__nav .nav__left {
+        position: static;
+    }
+
+    nav .top__nav .logo h3 {
+        color: var(--gray-200);
+    }
+
+    nav .top__nav .nav__right {
+        margin-right: 0;
+    }
+
+    nav .top__nav .btn__box img {
+        width: 1.5rem;
+        filter: var(--icon-gray-200);
+    }
+
+    nav .top__nav .nav__right .theme__btn {
+        display: none;
+    }
+
+    nav .top__nav .nav__right .profile__btn {
+        display: none;
+    }
+
+    /* --------- --- Navbar Bottom --- --------- */
+    nav .bottom__nav {
+        background: var(--background);
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    nav .bottom__nav .nav__menu {
+        justify-content: space-between;
+    }
+
+    nav .bottom__nav .nav__menu li {
+        width: calc(100% / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .bottom__nav .nav__menu li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+    }
+
+    nav .bottom__nav .nav__menu li img {
+        display: block;
+        width: 1.5rem;
+        filter: var(--icon-gray-200);
+        transition: var(--transition-1);
+    }
+
+    nav .bottom__nav .nav__menu li a:hover img {
+        filter: var(--icon-main);
+    }
+
+    nav .bottom__nav .nav__menu li img:nth-child(2) {
+        display: none;
+    }
+
+    nav .bottom__nav .nav__menu li:nth-last-child(1) {
+        display: block;
+    }
+
+    nav .bottom__nav .nav__menu li h6 {
+        color: var(--gray-200);
+        font-size: 0.8rem;
+    }
+
+    nav .bottom__nav .nav__menu li a.active::before,
+    nav .bottom__nav .nav__menu li a::after {
+        display: none;
+    }
+
+    nav .bottom__nav .nav__menu li a.active img:nth-child(1) {
+        display: none;
+    }
+
+    nav .bottom__nav .nav__menu li a.active img:nth-child(2) {
+        display: block;
+        filter: var(--icon-main);
+    }
+
+    nav .bottom__nav .nav__menu li a.active h6 {
+        color: var(--main);
+    }
+
+    /* <---------- --- Search Box --- ----------> */
+    nav .search__box {
+        width: 100%;
+    }
+    nav .search__box .search__bar {
+        width: 100%;
+    }
+}

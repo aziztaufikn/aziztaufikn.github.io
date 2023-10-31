@@ -1,0 +1,33 @@
+:root {
+    --gray-000: #fefefe;
+    --gray-100: #e0e0e0;
+    --gray-200: #d6d8d7;
+    --gray-300: #bdbec2;
+    --gray-400: #b5b5b5;
+    --gray-500: #888b94;
+    --gray-600: #555861;
+    --gray-700: #232531;
+    --gray-800: #191a1e;
+    --gray-900: #0b0b0d;
+
+    --icon-gray-000: invert(99%) sepia(0%) saturate(498%) hue-rotate(253deg)
+        brightness(117%) contrast(99%);
+    --icon-gray-100: invert(80%) sepia(32%) saturate(0%) hue-rotate(137deg)
+        brightness(103%) contrast(101%);
+    --icon-gray-200: invert(88%) sepia(9%) saturate(25%) hue-rotate(98deg)
+        brightness(103%) contrast(82%);
+    --icon-gray-300: invert(83%) sepia(3%) saturate(219%) hue-rotate(191deg)
+        brightness(92%) contrast(89%);
+    --icon-gray-400: invert(80%) sepia(0%) saturate(0%) hue-rotate(279deg)
+        brightness(92%) contrast(88%);
+    --icon-gray-500: invert(65%) sepia(5%) saturate(508%) hue-rotate(187deg)
+        brightness(84%) contrast(84%);
+    --icon-gray-600: invert(35%) sepia(14%) saturate(321%) hue-rotate(187deg)
+        brightness(88%) contrast(87%);
+    --icon-gray-700: invert(8%) sepia(7%) saturate(2929%) hue-rotate(194deg)
+        brightness(97%) contrast(85%);
+    --icon-gray-800: invert(7%) sepia(3%) saturate(2672%) hue-rotate(191deg)
+        brightness(89%) contrast(92%);
+    --icon-gray-900: invert(4%) sepia(2%) saturate(3032%) hue-rotate(202deg)
+        brightness(101%) contrast(100%);
+}
