@@ -1,0 +1,334 @@
+.login__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28rem;
+    height: fit-content;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    background: var(--color-light);
+    overflow: hidden;
+}
+
+.light .login__container {
+    box-shadow: 2px 1px 15px 1px var(--color-shadow-light);
+}
+
+.top {
+    display: none;
+}
+
+.login__box h1 {
+    text-align: center;
+}
+
+.input__box {
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+    padding: 0 0.7rem;
+    border-radius: 0.5rem;
+    background: var(--color-gray-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    transition: 0.4s;
+}
+
+.input__box img {
+    width: 1.4rem;
+    filter: var(--icon-gray-3);
+}
+
+.input__box input {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.input__box input::placeholder {
+    color: var(--color-gray-3);
+    font-size: 0.95rem;
+}
+
+.input__box .show__pass img {
+    width: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.input__box .show__pass img:hover {
+    filter: var(--icon-gray-1);
+}
+
+.input__box:focus-within {
+    background: var(--color-gray-4);
+}
+
+.form__box>span {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: -0.5rem;
+}
+
+.form__box>span a {
+    font-size: 0.95rem;
+}
+
+.form__box>span a:hover {
+    color: var(--color-main-dark);
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background: var(--color-main);
+    color: var(--color-gray-static-5);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: var(--color-main-dark);
+}
+
+.login__option {
+    margin-top: 1rem;
+    position: relative;
+    border-top: 1px solid var(--color-gray-4);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login__option small {
+    position: absolute;
+    top: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-light);
+    padding: 0 0.7rem;
+}
+
+.login__option .login__option__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.login__option .login__option__wrap a {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--color-gray-4);
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.login__option .login__option__wrap a img {
+    filter: var(--icon-gray-1);
+}
+
+.login__option .login__option__wrap a:hover {
+    background: var(--color-gray-4);
+}
+
+.login__option>span a:hover {
+    color: var(--color-main-dark);
+}
+
+/* ---------- Register ---------- */
+.pass__check {
+    margin: -0.5rem 0 0.5rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.input__pass:focus-within~.pass__check {
+    max-height: 5rem;
+}
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.checkbox input {
+    min-width: 1.4rem;
+    width: 1.4rem;
+    height: 1.35rem;
+    border: 1px solid var(--color-gray-3);
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.checkbox input::after {
+    content: "\2713";
+    display: none;
+    transition: 0.4s;
+}
+
+.checkbox input:checked {
+    background: var(--color-gray-2);
+    border-color: var(--color-gray-2);
+}
+
+.checkbox input:checked::after {
+    display: inline-block;
+    color: var(--color-gray-5);
+}
+
+.checkbox span {
+    color: var(--color-gray-3);
+}
+
+.checkbox span a {
+    font-size: 0.95rem;
+    transition: var(--transition-1);
+}
+
+.checkbox span a:hover {
+    color: var(--color-main-dark);
+}
+
+/* ----- ---------- ----- Media Query for Mobile Phones ----- ---------- ----- */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+
+    .login__container {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        border-radius: 0;
+        border-radius: 0;
+        padding: 5% 3%;
+        background: var(--color-dark);
+        overflow: scroll;
+    }
+
+    .light.login__container {
+        box-shadow: none;
+    }
+
+    .login__container::after {
+        content: "";
+        width: 100%;
+        height: 16rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--color-gradient);
+        z-index: -1;
+    }
+
+    .login__box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .top {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 0.5rem;
+        height: 30%;
+    }
+
+    .top h2 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-gray-static-5);
+    }
+
+    .top span {
+        font-size: 1.05rem;
+        color: var(--color-gray-static-4);
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        padding: 6% 5%;
+        border-radius: 0.5rem;
+        background: var(--color-dark);
+        box-shadow: -1px 1px 15px 1px var(--color-shadow-light);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .login__box h1 {
+        text-align: left;
+        font-size: 1.4rem;
+    }
+
+    .input__box {
+        margin: 1.6rem 0;
+    }
+
+    .register__box .input__box {
+        margin: 1rem 0;
+    }
+
+    .login__box input::placeholder {
+        font-size: 1rem;
+    }
+
+    .form__box>span a {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    button {
+        height: 3.2rem;
+        margin: 0;
+    }
+
+    .login__option {
+        width: 100%;
+        height: 35%;
+        border-top: none;
+        justify-content: space-between;
+        gap: 0;
+        padding-bottom: 4%;
+    }
+
+    .login__option small {
+        top: -1.25rem;
+        background: none;
+    }
+
+    .login__option .login__option__wrap a {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .checkbox {
+        margin: -0.3rem 0 0.7rem 0;
+    }
+}

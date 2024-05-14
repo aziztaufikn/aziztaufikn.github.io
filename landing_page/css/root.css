@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-light: #1E1F21;
+    --color-dark: #151515;
+
+    --color-gray-1: #E8EBEE;
+    --color-gray-2: #dadfe3;
+    --color-gray-3: #969BA2;
+    --color-gray-4: #3C414C;
+    --color-gray-5: #282B32;
+
+    --color-main: #C0DA67;
+    --color-primary: #8CBEE7;
+    --color-secondary: #E7E865;
+    --color-danger: #F4847E;
+    --color-warning: #e7b559;
+    --color-succecs: #96D09A;
+    --color-purple: #A584BD;
+
+    --color-main-light: rgb(192, 218, 103, 0.2);
+    --color-primary-light: rgb(140, 190, 231, 0.2);
+    --color-secondary-light: rgb(231, 232, 101, 0.2);
+    --color-danger-light: rgb(244, 132, 126, 0.2);
+    --color-warning-light: rgb(231, 181, 89, 0.2);
+    --color-succecs-light: rgb(150, 208, 154, 0.2);
+    --color-purple-light: rgb(165, 132, 189, 0.2);
+
+    --color-main-dark: #a3be47;
+    --color-primary-dark: #6da7d6;
+    --color-secondary-dark: #d1d11d;
+    --color-danger-dark: #e06a64;
+    --color-warning-dark: #d3a145;
+    --color-succecs-dark: #6eb973;
+    --color-purple-dark: #946baf;
+
+    --color-light-static: #1E1F21;
+    --color-dark-static: #151515;
+
+    --color-gray-static-1: #E8EBEE;
+    --color-gray-static-2: #dadfe3;
+    --color-gray-static-3: #969BA2;
+    --color-gray-static-4: #3C414C;
+    --color-gray-static-5: #282B32;
+
+    --color-shadow-light: rgba(122, 115, 115, 0.2);
+    --color-shadow-dark: rgba(122, 115, 115, 0.3);
+
+    --color-gradient: linear-gradient(#98b33f, #C0DA67);
+
+    /* ----- Icon Root ----- */
+    --icon-light: invert(9%) sepia(12%) saturate(321%) hue-rotate(182deg) brightness(94%) contrast(91%);
+    --icon-dark: invert(0%) sepia(31%) saturate(2566%) hue-rotate(19deg) brightness(92%) contrast(84%);
+
+    --icon-gray-1: invert(88%) sepia(10%) saturate(66%) hue-rotate(169deg) brightness(107%) contrast(90%);
+    --icon-gray-2: invert(85%) sepia(13%) saturate(77%) hue-rotate(165deg) brightness(102%) contrast(95%);
+    --icon-gray-3: invert(65%) sepia(18%) saturate(117%) hue-rotate(175deg) brightness(92%) contrast(88%);
+    --icon-gray-4: invert(23%) sepia(16%) saturate(518%) hue-rotate(183deg) brightness(94%) contrast(88%);
+    --icon-gray-5: invert(13%) sepia(17%) saturate(495%) hue-rotate(183deg) brightness(98%) contrast(90%);
+
+    --icon-main: invert(97%) sepia(11%) saturate(2109%) hue-rotate(14deg) brightness(94%) contrast(82%);
+    --icon-primary: invert(76%) sepia(10%) saturate(1635%) hue-rotate(173deg) brightness(96%) contrast(88%);
+    --icon-secondary: invert(98%) sepia(6%) saturate(3977%) hue-rotate(1deg) brightness(97%) contrast(90%);
+    --icon-danger: invert(51%) sepia(11%) saturate(2094%) hue-rotate(314deg) brightness(120%) contrast(91%);
+    --icon-warning: invert(69%) sepia(76%) saturate(305%) hue-rotate(358deg) brightness(93%) contrast(94%);
+    --icon-succecs: invert(77%) sepia(26%) saturate(400%) hue-rotate(74deg) brightness(95%) contrast(92%);
+    --icon-purple: invert(81%) sepia(31%) saturate(2973%) hue-rotate(203deg) brightness(79%) contrast(83%);
+
+    --icon-light-static: invert(9%) sepia(12%) saturate(321%) hue-rotate(182deg) brightness(94%) contrast(91%);
+    --icon-dark-static: invert(0%) sepia(31%) saturate(2566%) hue-rotate(19deg) brightness(92%) contrast(84%);
+
+    --icon-gray-static-1: invert(88%) sepia(10%) saturate(66%) hue-rotate(169deg) brightness(107%) contrast(90%);
+    --icon-gray-static-2: invert(85%) sepia(13%) saturate(77%) hue-rotate(165deg) brightness(102%) contrast(95%);
+    --icon-gray-static-3: invert(65%) sepia(18%) saturate(117%) hue-rotate(175deg) brightness(92%) contrast(88%);
+    --icon-gray-static-4: invert(23%) sepia(16%) saturate(518%) hue-rotate(183deg) brightness(94%) contrast(88%);
+    --icon-gray-static-5: invert(13%) sepia(17%) saturate(495%) hue-rotate(183deg) brightness(98%) contrast(90%);
+}
+
+/* ---------- LIGHT MODE ---------- */
+.light {
+    --color-light: #f3f5f7;
+    --color-dark: #ffffff;
+
+    --color-gray-1: #1f2024;
+    --color-gray-2: #3b3c3e;
+    --color-gray-3: #70767a;
+    --color-gray-4: #ccc9c9;
+    --color-gray-5: #e4e4e4;
+
+    --color-shadow-light: rgba(65, 60, 60, 0.3);
+    --color-shadow-dark: rgb(65, 60, 60, 0.4);
+
+    /* ----- Icon Root ----- */
+    --icon-light: invert(95%) sepia(4%) saturate(106%) hue-rotate(170deg) brightness(103%) contrast(95%);
+    --icon-dark: invert(100%) sepia(100%) saturate(1%) hue-rotate(17deg) brightness(103%) contrast(101%);
+
+    --icon-gray-1: invert(8%) sepia(5%) saturate(1590%) hue-rotate(191deg) brightness(98%) contrast(89%);
+    --icon-gray-2: invert(18%) sepia(9%) saturate(215%) hue-rotate(182deg) brightness(98%) contrast(84%);
+    --icon-gray-3: invert(48%) sepia(8%) saturate(286%) hue-rotate(161deg) brightness(94%) contrast(88%);
+    --icon-gray-4: invert(90%) sepia(6%) saturate(74%) hue-rotate(314deg) brightness(93%) contrast(85%);
+    --icon-gray-5: invert(96%) sepia(8%) saturate(614%) hue-rotate(204deg) brightness(118%) contrast(79%);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+input,
+button {
+    color: var(--color-gray-1);
+    font-weight: 500;
+}
+
+span,
+small {
+    color: var(--color-gray-3);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+input {
+    font-size: 1.1rem;
+}
+
+button {
+    font-size: 1rem;
+}
+
+span {
+    font-size: 0.95rem;
+}
+
+small {
+    font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-main);
+    border-radius: 4px;
+}
+
+@media screen and (max-width:600px) {
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}
